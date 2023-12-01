@@ -17,7 +17,7 @@ header{
 
 .header-flex figure:last-child{
     object-fit: contain;
-    width: 10%;
+    width: 2rem;
 }
 
 .header-flex{
@@ -29,4 +29,48 @@ header{
 
 .header-flex figure img{
     width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 810px){
+    body{
+        background-color: red;
+    }
 }
