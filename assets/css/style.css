@@ -86,10 +86,25 @@ header{
     padding-inline: 2rem;
     padding-top: 2rem;
     border-radius: 1rem;
-    margin: 2rem;
+    /* margin: 2rem; */
+    margin-block: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+/* .uses-demo{
+    margin-left: 2rem;
+}
+
+.clean-code{
+    margin-right: 2rem;
+} */
+
+#uses-row-one,
+#uses-row-two{
+    margin-inline: 2rem;
+    gap: 1.5rem;
 }
 
 .uses-demo a{
@@ -189,6 +204,29 @@ header{
 
 
 @media screen and (min-width: 810px){
+    #uses-row-one{
+        display: flex;
+    }
+
+    #uses-row-two{
+        display: flex;
+    }
+
+    .uses-demo{
+        flex-basis: 68%;
+    }
+
+    .clean-code{
+        flex-basis: 32%;
+    }
+
+    .uses-demo > figure{
+        width: 55%;
+    }
+
+    .card-style figure{
+        width: 50%;
+    }
 }
 
 
