@@ -8,6 +8,17 @@ img{
     display: block;
 }
 
+html{
+    font-family: 'PT Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HEADER*/ 
+
+
 header{
     background-color: #0084fd; 
     position: fixed;
@@ -15,8 +26,7 @@ header{
     width: 100%;
 }
 
-.header-flex figure:last-child{
-    object-fit: contain;
+#header-r figure{
     width: 2rem;
 }
 
@@ -29,6 +39,29 @@ header{
 
 .header-flex figure img{
     width: 100%;
+}
+
+#header-r nav{
+    display: none;
+}
+
+#header-r ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    text-transform: capitalize;
+}
+
+#header-r ul li a{
+    color: white;
+}
+
+#header-r ul li a:hover{
+    background-color: white;
+    padding: 0.5rem;
+    color: black;
+    border-radius: 50rem;
+    align-items: center;
 }
 
 
@@ -73,4 +106,28 @@ header{
     body{
         background-color: red;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1920px){
+    #header-r figure{
+        display: none;
+    }
+
+    #header-r nav{
+        display: inline-block;
+    }
+
 }
