@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+header{
+    background-color: #0084fd; 
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.header-flex figure:last-child{
+    object-fit: contain;
+    width: 10%;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.header-flex figure img{
+    width: 100%;
+}
