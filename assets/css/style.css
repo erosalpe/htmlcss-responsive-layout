@@ -64,6 +64,88 @@ header{
     align-items: center;
 }
 
+/* MAIN*/
+
+/* Section App uses*/
+
+#app-uses{
+    padding-top: 5rem;
+}
+
+#uses-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.uses-background{
+    background-color: #B5DDFF;
+}
+
+.uses-demo,
+.clean-code{
+    padding-inline: 2rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.uses-demo a{
+    display: flex;
+    gap: 1rem;
+    color: white;
+    background-color: #0084fd;
+    padding-block: 0.8rem;
+    padding-inline: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-self: flex-start;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+.uses-demo > figure{
+    width: 100%;  
+}
+
+.uses-demo > figure img{
+    width: 100%;
+}
+
+.uses-demo h2,
+.clean-code h2{
+    font-size: 1.4rem;
+    color: #0084fd;
+}
+
+.uses-demo p,
+.clean-code p{
+    font-size: 0.9rem;
+    color: #5a6e7f;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.clean-code{
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.clean-code p{
+    text-align: center;
+}
+
+.clean-code figure{
+    width: 20%;
+}
+
+.clean-code figure img{
+    width: 100%;
+}
+
 
 
 
@@ -103,9 +185,6 @@ header{
 
 
 @media screen and (min-width: 810px){
-    body{
-        background-color: red;
-    }
 }
 
 
