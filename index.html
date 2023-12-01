@@ -9,7 +9,7 @@
 <body>
 
     <header>
-        <div class="header-flex">
+        <div class="header-flex container">
             <figure>
                 <a href="#">
                     <img src="./assets/img/logo.png" alt="site logo">
@@ -44,33 +44,47 @@
     <main>
 
         <!--Sezione 1-->
-        <section id="app-uses">
+        <section id="app-uses" class="container">
             <div id="uses-body">
 
                 <!--Fila 1-->
                 <div id="uses-row-one">
 
                     <!--Card Demo-->
-                    <div class="uses-background uses-demo">
-                        <h2>
-                            Get a demo application
-                        </h2>
+                    <div class="demo-body">
+                        <div class="demo-l">
+                            <div class="uses-background uses-demo">
+                                <h2>
+                                    Get a demo application
+                                </h2>
+        
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. similique aut saepe amet consectetur adipisicing elit. similique aut saepe
+                                </p>
+        
+                                <a href="https://www.apple.com/it/app-store/" target="_blank">
+                                    <figure>
+                                        <img src="./assets/img/apple.svg" alt="apple logo">
+                                    </figure>
+                                    <span>
+                                        App Store
+                                    </span>
+                                </a>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. similique aut saepe amet consectetur adipisicing elit. similique aut saepe
-                        </p>
+                                <div id="not-desktop-image">
+                                    <figure>
+                                        <img src="./assets/img/phone.png" alt="phone-img">
+                                    </figure>
+                                </div>
+                                
+                            </div>      
+                        </div>
 
-                        <a href="https://www.apple.com/it/app-store/" target="_blank">
+                        <div id="demo-r">
                             <figure>
-                                <img src="./assets/img/apple.svg" alt="apple logo">
+                                <img src="./assets/img/phone.png" alt="phone-img">
                             </figure>
-                            <span>
-                                App Store
-                            </span>
-                        </a>
-                        <figure>
-                            <img src="./assets/img/phone.png" alt="phone-img">
-                        </figure>
+                        </div>
                     </div>
 
                     <!--Card Clean Code-->
@@ -91,7 +105,7 @@
 
                 <!--Fila 2-->
                 <div id="uses-row-two">
-                    
+
                     <!--Card Web Design-->
                     <div class="uses-background not-margin-top card-style">
 

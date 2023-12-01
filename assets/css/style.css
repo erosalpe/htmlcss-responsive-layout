@@ -34,7 +34,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
 }
 
 .header-flex figure img{
@@ -86,20 +86,11 @@ header{
     padding-inline: 2rem;
     padding-top: 2rem;
     border-radius: 1rem;
-    /* margin: 2rem; */
     margin-block: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-
-/* .uses-demo{
-    margin-left: 2rem;
-}
-
-.clean-code{
-    margin-right: 2rem;
-} */
 
 #uses-row-one,
 #uses-row-two{
@@ -122,11 +113,11 @@ header{
     letter-spacing: 0.2rem;
 }
 
-.uses-demo > figure{
+.uses-demo #not-desktop-image > figure{
     width: 100%;  
 }
 
-.uses-demo > figure img{
+.uses-demo #not-desktop-image > figure img{
     width: 100%;
 }
 
@@ -153,16 +144,16 @@ header{
     text-align: center;
 }
 
-.card-style figure{
-    width: 20%;
-}
-
 .card-style figure img{
     width: 100%;
 }
 
 .not-margin-top{
     margin-top: 0;
+}
+
+#demo-r{
+    display: none;
 }
 
 
@@ -204,24 +195,30 @@ header{
 
 
 @media screen and (min-width: 810px){
+    
     #uses-row-one{
         display: flex;
     }
 
     #uses-row-two{
         display: flex;
+        justify-content: space-between;
     }
 
-    .uses-demo{
-        flex-basis: 68%;
+    .card-style{
+        --gap: 2rem;
+        --columns: 3;
+        flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
     }
 
     .clean-code{
-        flex-basis: 32%;
+        --gap: 2rem;
+        --columns: 2;
+        flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
     }
 
-    .uses-demo > figure{
-        width: 55%;
+    .uses-demo #not-desktop-image > figure{
+        width: 45%;
     }
 
     .card-style figure{
@@ -249,6 +246,74 @@ header{
 
     #header-r nav{
         display: inline-block;
+    }
+
+    .container{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #not-desktop-image{
+        display: none;
+    }
+
+    #demo-r{
+        display: inline-block;
+    }
+
+    .demo-body{
+        display: flex;
+        background-color: #b5ddff;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        flex-basis: 67.5%;
+    }
+
+    #demo-r figure{
+        width: 65%;
+        position: relative;
+        top: 4.2rem;
+    }
+
+    #demo-r figure img{
+        width: 100%;
+    }
+    
+    #uses-row-one{
+        gap: 3rem;
+    }
+
+    .clean-code{
+        margin-top: 0;
+        flex-basis: 32.5%;
+    }
+
+    #app-uses{
+        padding-top: 8rem;
+    }
+
+    .card-style figure{
+        width: 30%;
+    }
+
+    .uses-background{
+        border-radius: 1rem;
+    }
+
+    #uses-row-one{
+        gap: 2rem;
+    }
+
+    .demo-l p {
+        font-size: 1.1rem;
+    }
+
+    .demo-l {
+       flex-basis: 90%;
+    }
+
+    .uses-demo{
+        padding-top: 0.5rem;
     }
 
 }
