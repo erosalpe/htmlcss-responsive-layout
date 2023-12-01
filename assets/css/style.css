@@ -82,7 +82,7 @@ header{
 }
 
 .uses-demo,
-.clean-code{
+.card-style{
     padding-inline: 2rem;
     padding-top: 2rem;
     border-radius: 1rem;
@@ -116,34 +116,38 @@ header{
 }
 
 .uses-demo h2,
-.clean-code h2{
+.card-style h2{
     font-size: 1.4rem;
     color: #0084fd;
 }
 
 .uses-demo p,
-.clean-code p{
+.card-style p{
     font-size: 0.9rem;
     color: #5a6e7f;
     font-weight: bold;
     line-height: 160%;
 }
 
-.clean-code{
+.card-style{
     padding-bottom: 2rem;
     align-items: center;
 }
 
-.clean-code p{
+.card-style p{
     text-align: center;
 }
 
-.clean-code figure{
+.card-style figure{
     width: 20%;
 }
 
-.clean-code figure img{
+.card-style figure img{
     width: 100%;
+}
+
+.not-margin-top{
+    margin-top: 0;
 }
 
 
