@@ -16,6 +16,10 @@ a{
     text-decoration: none;
 }
 
+
+:root{
+    --main-color: #9792E4;
+}
 /* HEADER*/ 
 
 
@@ -70,6 +74,7 @@ header{
 
 #app-uses{
     padding-top: 5rem;
+    padding-bottom: 4rem;
 }
 
 #uses-body{
@@ -160,7 +165,8 @@ header{
 /* Sezione 2*/
 
 .planning{
-    background-color: #9792e4;
+    background-color: var(--main-color);
+    margin-bottom: 4rem;
 }
 
 .planning-body{
@@ -225,13 +231,91 @@ header{
 }
 
 .planning-r-container a{
-    background-color: #9792e4;
+    background-color: var(--main-color);
     border-radius: 50%;
     padding-inline: 1rem;
     padding-block: 0.875rem; 
 }
 
 
+
+/* Sezione 3*/ 
+
+.testimonials-body{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+.testimonials-body h4{
+    font-weight: 200;
+}
+
+.testimonials-body h2{
+    color: var(--main-color);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.testimonials-body > p{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+
+.testimonial-card figure img{
+    width: 80%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.testimonial-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.testimonial-card .quote,
+.testimonial-card .name{
+    color: white;
+}
+
+.testimonial-card .name{
+    font-weight: bold;
+}
+
+.quote{
+    quotes: "“" "”";
+}
+
+.quote p{
+    display: inline;
+    line-height: 170%;
+}
+
+.quote q::before{
+    content: open-quote;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 0.1em;
+    vertical-align: -0.2em;
+}
+
+.quote q::after{
+    content: close-quote;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 0.1em;
+    vertical-align: -0.3em;
+}
 
 
 
@@ -280,16 +364,16 @@ header{
         justify-content: space-between;
     }
 
+    .demo-body{
+        flex-basis: calc(((100% / 3) * 2) + 1.5rem )
+    }
+
     .card-style{
-        --gap: 2rem;
-        --columns: 3;
-        flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+        flex-basis: calc((100% / 3) * 1);
     }
 
     .clean-code{
-        --gap: 2rem;
-        --columns: 2;
-        flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+        flex-basis: calc((100% / 3) * 1)
     }
 
     .uses-demo #not-desktop-image > figure{
@@ -376,6 +460,10 @@ header{
     }
 
     #uses-row-one{
+        gap: 2rem;
+    }
+
+    #uses-row-two{
         gap: 2rem;
     }
 
