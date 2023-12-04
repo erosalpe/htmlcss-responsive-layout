@@ -328,6 +328,62 @@ header{
 }
 
 
+/* Sezione 4*/ 
+
+
+.benefits-body{
+    background-color: var(--main-color);
+    margin-top: 4rem;
+    padding-block: 4rem;
+}
+
+.benefits-body > h2{
+    text-align: center;
+    font-size: 2.6rem;
+    color: white;
+}
+
+.benefits-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1.5rem;
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    row-gap: 2rem;
+    margin: 2rem;
+}
+
+.benefits-card h2,
+.benefits-card h3{
+    color:var(--main-color);
+}
+
+.benefits-card h2{
+    font-size: 2.6rem;
+    padding-bottom: 1rem;
+}
+
+.benefits-card h3{
+    font-size: 1.5rem;
+}
+
+.benefits-card p{
+    color: rgb(119, 119, 119);
+    line-height: 170%;
+}
+
+.benefits-card a{
+    color: white;
+    background-color: var(--main-color);
+    padding: 0.5rem 2rem;
+    align-self: flex-start;
+    border-radius: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+
 
 
 
