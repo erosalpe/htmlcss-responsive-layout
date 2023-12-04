@@ -463,6 +463,68 @@ header{
     align-items: center;
 }
 
+/* sezione 6*/ 
+
+
+.get-started-body{
+    padding-top: 4rem;
+    /* background-color: var(--main-color); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-inline: 2rem;
+    padding-bottom: 4rem;
+}
+
+.get-started-body h4{
+    color: rgb(241, 241, 241);
+    font-weight: 200;
+}
+
+.get-started-body h3{
+    color: rgb(241, 241, 241);
+    font-size: 1.4rem;
+}
+
+.get-started-body h2{
+    color: rgb(255, 196, 0);
+    font-size: 3.5rem;
+}
+
+.get-started-body .grey{
+    color: rgb(241, 241, 241);
+    line-height: 150%;
+}
+
+.button-white{
+    background-color: white;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    border-radius: 2rem;
+}
+
+.button-white a{
+    color: var(--main-color);
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+.copyr{
+    color: rgb(241, 241, 241);
+}
+
+.copyr a{
+    color: rgb(241, 241, 241);
+    text-decoration: underline;
+}
+
+.back-main{
+    background-color: var(--main-color);
+}
+
+
+
 
 
 
@@ -582,6 +644,11 @@ header{
 
     .about-r{
         width: 40%;
+    }
+
+    .get-started-body{
+        width: 60%;
+        margin: 0 auto;
     }
 
 
@@ -752,5 +819,10 @@ header{
 
     .main-color{
         width: 50%;
+    }
+
+    .get-started-body{
+        width: 50%;
+        margin: 0 auto;
     }
 }
