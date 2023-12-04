@@ -458,6 +458,22 @@ header{
         align-self: flex-start;
     }
 
+    .benefits-flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 2rem;
+        margin-top: 3rem;
+    }
+
+    .benefits-card{
+        --gap: 2rem;
+        --columns: 2;
+        flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+        margin: 0;
+    }
+
 
 }
 
@@ -586,5 +602,31 @@ header{
     .testimonials-body{
         width: 70%;
         margin: 0 auto;
+    }
+
+    .benefits-flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-inline: 0;
+        margin-top: 3rem;
+    }
+
+    .benefits-card{
+        --gap: 2rem;
+        --columns: 3;
+        flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+        margin: 0;
+    }
+
+    .benefits-body{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .back-main{
+        background-color: var(--main-color);
+        margin-top: 4rem;
     }
 }
