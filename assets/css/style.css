@@ -383,7 +383,85 @@ header{
     font-weight: bold;
 }
 
+/* sezione 5*/
 
+.about-body{
+    padding-top: 2rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-body h2{
+    color: var(--main-color);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.about-l > p{
+    font-size: 1rem;
+    line-height: 250%;
+}
+
+.about-body figure img{
+    width: 100%;
+}
+
+.about-body figure{
+    width: 30%;
+}
+
+.about-pic{
+    position: relative;
+}
+
+.about-pic figure:last-child{
+    position: absolute;
+    top: 18%;
+    left: 28%;
+    transform: translate(-50% , -50%);
+    width: 13%;
+}
+
+.about-pic figure:first-child img{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.main-color{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-block: 2rem;
+}
+
+.about-body a figure{
+    width: 7%;
+    display: inline-block;
+}
+
+.about-body a figure a{
+    width: 100%;
+}
+
+.about-body a{
+    background-color: var(--main-color);
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    border-radius: 2rem;
+    align-self: flex-start;
+    color: white;
+}
+
+.linkedin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 
 
@@ -423,7 +501,7 @@ header{
     
     #uses-row-one{
         display: flex;
-    } 
+    }  
 
     #uses-row-two{
         display: flex;
@@ -472,6 +550,38 @@ header{
         --columns: 2;
         flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
         margin: 0;
+    }
+
+
+    .about-body{
+        flex-direction: row;
+        align-items: flex-start;
+        column-gap: 4rem;
+        margin-inline: 5rem;
+    }
+
+    .about-pic figure:first-child img{
+        width: 200%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .about-pic figure:last-child{
+        position: absolute;
+        top: 18%;
+        left: 55%;
+        transform: translate(-50% , -50%);
+        width: 13%;
+    }
+
+    .about-l{
+        width: 60%;
+    }
+
+    .about-r{
+        width: 40%;
     }
 
 
@@ -628,5 +738,19 @@ header{
     .back-main{
         background-color: var(--main-color);
         margin-top: 4rem;
+    }
+
+
+    .about-margin{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .about-body{
+        margin-inline: 1rem;
+    }
+
+    .main-color{
+        width: 50%;
     }
 }
