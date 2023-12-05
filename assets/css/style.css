@@ -489,11 +489,13 @@ header{
 .get-started-body h2{
     color: rgb(255, 196, 0);
     font-size: 3.5rem;
+    text-align: center;
 }
 
 .get-started-body .grey{
     color: rgb(241, 241, 241);
     line-height: 150%;
+    text-align: center;
 }
 
 .button-white{
@@ -536,6 +538,7 @@ header{
 .footer-body p{
     font-size: 0.8rem;
     color: white;
+    text-align: center;
 }
 
 .footer-body a{
